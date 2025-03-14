@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #efefef;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+.page{
+    display: grid;
+    row-gap: 30px;
+    column-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "order section-2"
+    "section-3 section-3";
+    width: 100%;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+
+.brand-header{
+    grid-area: header;
+}
+.amount{
+    grid-area: amount;
+}
+
+.details{
+    grid-area: details;
+    font-weight: bold;
+}
+
+.price{
+    grid-area: price;
+    font-weight: bold;
+}
+
+.detailItem{
+    grid-area: detailItem;
+}
+
+.brand-header{
+    display: flex;
+    background-color: #43281c;
+    width: 100% ;
+    color: #fbf2c0;
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+
+
+.img-header{
+    height: 25px;
+    position: relative;
+    top: 3px;
+    
+}
+h1{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.title-section{
+    font-style: normal;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    padding: 10px;
+    color: #885a2d;;
+    text-transform: uppercase;
+}
+
+/*marco de la seccion para ITEM, NAME y PAYMENT y tiene el color de fondo*/  
+.title-box-shadow{
+    background-color: #eee1d5;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.2);
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+
+
+
+.order{
+    grid-area: order
+}
+
+.section-2{
+    grid-area: section-2;
+}
+
+.section-3{
+    grid-area: section-3;
+}
+
+.section-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-4{
+    grid-area: section-4;
+}
+
+.no-bullets{
+    list-style: none;           /*quita los bullets*/
+}
+
+
+.price{
+    font-style: normal;
+    text-align: center;
+}
+
+.sub-details-items {
+    grid-area: sub-details-items;
+}
+
+
+/*Grid que contiene los elelemtos del ITEM*/
+.grid-section-1{
+    display: grid;
+    row-gap: 8px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "amount details price"
+    ". sub-details-items  ."; /*El punto es para que no se vea el espacio que no tiene informacion
+    o si quiero puedo poner amount sub-details-items price*/
+
+    border-bottom: 2px solid #DDB892;
+}
+
+.grid-section-1:last-child{
+    border-bottom: none;  /*quita el borde el ultimo elemento de la lista del grid */
+}
+
+.sub-details-items {
+    grid-area: sub-details-items;
+    color: #B08968;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+
+.name-order{
+    position: relative;
+    display: block;
+    margin: 10px;
+
+    
+}
+
+.input-label {
+    background-color: #eee1d5;
+    color: #885a2d;
+    font-size: 11px;
+    position: absolute;
+    left: 25px;
+    top: -7px;
+    padding: 0 2px;
+
+}
+
+.input-name{
+    padding: 8px;
+    border-radius: 100px;
+    width: 100%;
+    text-indent: 18px;
+    font-size: 18px;
+    background-color: #eee1d5;
+    border: 2px #885a2d solid;
+}
+
+.card-number{
+    position: relative;
+    display: block;
+    margin: 10px;
+}
+
+
+
+.ccv-number{
+    position: relative;
+    display: block;
+    margin: 10px;
+}
+
+.input-payment{
+    padding: 8px;
+    border-radius: 100px;
+    width: 100%;
+    text-indent: 18px;
+    font-size: 18px;
+    background-color: #eee1d5;
+    border: 2px #885a2d solid;
+}
+
+
+.total-label{
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+.totals-table{
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+.totals-table td:last-child{
+    text-align: right;
+}
+
+section {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.checkout {
+    background-color: #deb993;
+    border: none;
+    padding: 10px 30px;
+    width: 100%;
+    border-radius: 100px;
+    font-size: 16px;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    unicode-bidi: isolate;
+    border-spacing: 2px;
+    border-color: gray;
+}
+

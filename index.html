@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Masters</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./coffee.css" />
+</head>
+<body>
+    <header class="brand-header">
+        <h1>
+            <img class="img-header" src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png" alt="Coffee Masters" />
+            Coffee Masters
+        </h1>
+    </header>
+    <div class="page">
+        <section class="order title-box-shadow"> <!-- La clase es el marco de los ITEMS: box-shadow-->
+            <h2 class="title-section">ITEMS</h2>
+            <ul class="no-bullets">
+                <li class="grid-section-1">
+                    <p class="amount">1x</p>
+                    <p class="details">Cappuccino</p>
+                    <p class="price">$3.35</p>
+                    <ul class="no-bullets sub-details-items">
+                        <li>
+                            <p class="sub-details-items">Lite foam</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="grid-section-1">
+                    <p class="amount">1x</p>
+                    <p class="details">Cappuccino</p>
+                    <p class="price">$7.90</p>
+                    <ul class="no-bullets sub-details-items">
+                        <li>
+                            <p class="sub-details-items">Almond Milk</p>
+                            <p class="sub-details-items">Double Espresso Shot</p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="grid-section-1">
+                    <p class="amount">1x</p>
+                    <p class="details">Croissant</p>
+                    <p class="price">$5.37</p>
+                    <ul class="no-bullets sub-details-items">
+                        <li>
+                            <p class="sub-details-items">Butter</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section-2">
+            <div class="title-box-shadow">
+                <h2 class="title-section">NAME</h2>
+                <div class="name-order">
+                    <label class="input-label">Name for order</label>
+                    <input class="input-name" />
+                </div>
+            </div>
+        
+            <div class="title-box-shadow">
+                <h2 class="title-section">PAYMENT</h2>
+                <div class="card-number ">
+                    <label class="input-label">Card number</label>
+                    <input class="input-payment" />
+                </div>
+                <div class="ccv-number">
+                    <label class="input-label">CCV Numer</label>
+                    <input class="input-payment" />
+                </div>
+            </div>
+        </section>
+        <section class="section-3">
+            <table class="totals-table">
+                <tbody>
+                <tr>
+                    <td>Subtotal:</td>
+                    <td>$19.27</td>
+                </tr>
+                <tr>
+                    <td>Tax:</td>
+                    <td>$19.27</td>
+                </tr>
+                <tr class="total-label">
+                    <td>Total:</td>
+                    <td>$19.27</td>
+                </tr>
+                </tbody>
+            </table>
+            <button class="checkout" type="button">Place order</button>
+        </section>
+    </div>
+</body>
+</html>
